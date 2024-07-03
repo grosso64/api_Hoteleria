@@ -1,0 +1,40 @@
+# Hotel Management API
+
+
+## Instalación
+
+
+
+1. Instalar las dependencias:
+
+    pip install -r requirements.txt
+
+
+2. Configurar la base de datos en el archivo `klapi.py`.
+
+
+    
+
+3. Ejecutar la aplicación:
+   
+    gunicorn app:app  # Para wsl con ubuntu(instalar dependecias de requirements.txt en el wsl)
+ 
+   
+
+## Uso
+
+- **Registro**: `/auth/registro` (POST)
+- **Login**: `/auth/login` (POST)
+- **Crear Habitación**: `/api/habitaciones` (POST)
+- **Eliminar Habitación**: `/api/habitaciones/<int:id>` (DELETE)
+- **Actualizar Habitación**: `/api/habitaciones/<int:numero>` (PUT)
+- **Buscar Habitaciones**: `/api/habitaciones` (GET)
+- **Buscar Habitaciones por Rango de Fechas**: `/api/habitaciones/buscar` (GET)
+- **Buscar Habitaciones por Precio**: `/api/habitaciones/precio_menor` (GET)
+- **Buscar Disponibilidad de Habitaciones por Día**: `/api/habitaciones/disponibilidad_dia` (GET)
+- **Reservar Habitación**: `/api/reservas` (POST)
+- **Listar Reservas**: `/api/reservas` (GET)
+
+## Integrantes del Grupo
+- Denis Grosso
+
