@@ -1,3 +1,4 @@
+#Español
 # Hotel Management API
 
 
@@ -37,4 +38,45 @@
 
 ## Integrantes del Grupo
 - Denis Grosso
+-------------------------------------------------------------------------------------------------------------
+#English
+#Hotel Management API
+
+
+## Facility
+
+
+
+1. Install the dependencies:
+
+    pip install -r requirements.txt
+
+
+2. Configure the database in the `klapi.py` file.
+
+
+    
+
+3. Run the application:
+   
+    gunicorn app:app # For wsl with ubuntu (install dependencies from requirements.txt in wsl)
+ 
+   
+
+## Use
+
+- **Registration**: `/auth/registration` (POST)
+- **Login**: `/auth/login` (POST)
+- **Create Room**: `/api/rooms` (POST)
+- **Delete Room**: `/api/rooms/<int:id>` (DELETE)
+- **Update Room**: `/api/rooms/<int:number>` (PUT)
+- **Search Rooms**: `/api/rooms` (GET)
+- **Search for Rooms by Date Range**: `/api/rooms/search` (GET)
+- **Search Rooms by Price**: `/api/rooms/price_lower` (GET)
+- **Search for Room Availability by Day**: `/api/rooms/availability_day` (GET)
+- **Reserve Room**: `/api/reservas` (POST)
+- **List Reservations**: `/api/reservas` (GET)
+
+## Group members
+-Denis Grosso
 
